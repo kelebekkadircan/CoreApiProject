@@ -1,0 +1,32 @@
+﻿@model List<ResultServiceDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Hizmet Başlığı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+       
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.Title</td>
+          
+            <td><a class="btn mb-1 btn-rounded btn-outline-danger" href="/Service/DeleteService/@item.ServiceID">Sil</a></td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-warning" href="@Url.Action("UpdateService", "Service", new { id = item.ServiceID })">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+<a class="btn mb-1 btn-rounded btn-outline-info" href="@Url.Action("AddService", "Service")">Yeni Hizmet Ekle</a>
+
+

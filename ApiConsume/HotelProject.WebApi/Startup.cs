@@ -47,6 +47,17 @@ namespace HotelProject.WebApi
             services.AddScoped<ISubscribeDal, EfSubscriberDal>();
             services.AddScoped<ISubscribeService, SubscribeManager>();
 
+            services.AddAutoMapper(typeof(Startup));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowOrigin",
+                    builder =>
+                {
+                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                });
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -65,6 +76,8 @@ namespace HotelProject.WebApi
             }
 
             app.UseRouting();
+
+            app.UseCors("AllowOrigin");
 
             app.UseAuthorization();
 

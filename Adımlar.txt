@@ -1,2 +1,4 @@
-Api Testi ve Swagger UI
+Api Testi ve Swagger UI --
+Temayý Ekle ve register login yap.
+
 

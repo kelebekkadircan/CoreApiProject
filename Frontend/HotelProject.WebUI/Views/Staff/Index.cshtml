@@ -1,8 +1,35 @@
-﻿
+﻿@model List<StafViewModel>
+
+
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Personel Adı</th>
+            <th>Personel Ünvanı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+            <th>Detaylar</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.StaffID</td>
+                <td>@item.Name</td>
+                <td>@item.Title</td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-danger" href="/Staff/DeleteStaff/@item.StaffID">Sil</a></td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-warning" href="@Url.Action("UpdateStaff", "Staff", new { id = item.StaffID })">Güncelle</a></td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-dark" href="@Url.Action("Details", "Staff", new { id = item.StaffID })">Detaylar</a></td>
+            </tr>
+        }
+</table>
+
+<a class="btn mb-1 btn-rounded btn-outline-info" href="@Url.Action("AddStaff", "Staff")">Yeni Personel Ekle</a>
+
 

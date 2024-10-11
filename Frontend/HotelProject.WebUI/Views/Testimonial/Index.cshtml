@@ -1,0 +1,38 @@
+﻿@model List<TestimonialViewModel>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans Adı</th>
+        <th>Referans Görseli </th>
+        <th>Referans Unvanı </th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestimonialID</td>
+            <td>@item.Name</td>
+            <td>
+                <img src="@item.Image" alt="Alternate Text" />
+                </td>
+            <td>@item.Title</td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-danger" href="/Testimonial/DeleteTestimonial/@item.TestimonialID">Sil</a></td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-warning" href="@Url.Action("UpdateTestimonial", "Testimonial", new { id = item.TestimonialID })">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+<a class="btn mb-1 btn-rounded btn-outline-info" href="@Url.Action("AddTestimonial", "Testimonial")">Yeni Referans Ekle</a>
+
+
