@@ -32,6 +32,9 @@ namespace HotelProject.WebApi
         {
             services.AddDbContext<Context>();
 
+            services.AddScoped<IAboutDal, EfAboutDal>();
+            services.AddScoped<IAboutService, AboutManager>();
+
             services.AddScoped<IStaffDal, EfStaffDal>();
             services.AddScoped<IStaffService, StaffManager>();
 
