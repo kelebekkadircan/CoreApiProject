@@ -27,6 +27,8 @@ namespace HotelProject.DataAccessLayer.Concrete
 
         public DbSet<About> Abouts { get; set; }
 
+        public DbSet<Booking> Bookings { get; set; }
+
 
     }
 }

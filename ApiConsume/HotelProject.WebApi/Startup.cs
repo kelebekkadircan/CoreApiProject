@@ -32,6 +32,9 @@ namespace HotelProject.WebApi
         {
             services.AddDbContext<Context>();
 
+            services.AddScoped<IBookingDal,EfBookingDal>();
+            services.AddScoped<IBookingService, BookingManager>();
+
             services.AddScoped<IAboutDal, EfAboutDal>();
             services.AddScoped<IAboutService, AboutManager>();
 
@@ -49,6 +52,8 @@ namespace HotelProject.WebApi
 
             services.AddScoped<ISubscribeDal, EfSubscriberDal>();
             services.AddScoped<ISubscribeService, SubscribeManager>();
+
+
 
             services.AddAutoMapper(typeof(Startup));
 
