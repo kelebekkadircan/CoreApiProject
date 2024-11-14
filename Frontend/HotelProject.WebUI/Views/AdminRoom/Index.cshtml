@@ -1,0 +1,40 @@
+﻿@model List<ResultRoomDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+@* Admin Room Index *@
+
+
+
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Oda Numarası</th>
+        <th>Başlık</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        @* <th>Detaylar</th> *@
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.RoomNumber</td>
+            <td>@item.Title</td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-danger" href="/AdminRoom/DeleteRoom/@item.RoomID">Sil</a></td>
+            <td><a class="btn mb-1 btn-rounded btn-outline-warning" href="@Url.Action("UpdateRoom", "AdminRoom", new { id = item.RoomID })">Güncelle</a></td>
+            @* <td><a class="btn mb-1 btn-rounded btn-outline-dark" href="@Url.Action("Details", "AdminRoom", new { id = item.RoomID })">Detaylar</a></td> *@
+        </tr>
+    }
+</table>
+
+<a class="btn mb-1 btn-rounded btn-outline-info" href="@Url.Action("AddRoom", "AdminRoom")">Yeni Oda Ekle</a>
+
+
+

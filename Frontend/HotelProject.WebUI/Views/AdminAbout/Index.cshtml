@@ -1,0 +1,41 @@
+﻿@model List<ResultAboutDto>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+@* admin about sayfası *@
+
+
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
+<div class="container" >
+
+<h3>About Sayfa Düzenlemesi</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Başlık</th>
+        <th> İçerik</th>
+        @* <th> Oda Sayısı</th>
+        <th> Personel Sayısı</th>
+        <th> Müşteri Sayısı</th> *@
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Content</td>
+           @*  <td>@item.RoomCount</td>
+            <td>@item.StaffCount</td>
+            <td>@item.CustomerCount</td> *@
+            <td><a class="btn mb-1 btn-rounded btn-outline-warning" href="@Url.Action("UpdateAbout", "AdminAbout", new { id = item.AboutID })">Güncelle</a></td>
+        </tr>
+    }
+</table>
+
+</div>
+
+
+
