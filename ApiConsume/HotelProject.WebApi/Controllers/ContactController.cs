@@ -29,6 +29,7 @@ namespace HotelProject.WebApi.Controllers
             _contactService.TInsert(contact);
             return Ok("Add a Contact");
         }
+
         [HttpDelete("{id}")]
         public IActionResult DeleteContact(int id)
         {
@@ -39,7 +40,7 @@ namespace HotelProject.WebApi.Controllers
         }
 
         [HttpPut("UpdateContact")]
-        public IActionResult UpdateContactg(Contact contact)
+        public IActionResult UpdateContact(Contact contact)
         {
             _contactService.TUpdate(contact);
             return Ok("Update a Contact");

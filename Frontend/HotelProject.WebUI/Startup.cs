@@ -1,5 +1,9 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.EntityLayer.Concrete;
+using HotelProject.WebUI.Dtos.GuestDto;
+using HotelProject.WebUI.ValidationRules.GuestValidationRules;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,14 +26,38 @@ namespace HotelProject.WebUI
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+        //    services.AddDbContext<Context>();
+        //    services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>();
+        //    services.AddHttpClient();
+        //    services.AddTransient<IValidator<CreateGuestDto>, CreateGuestValidator>();
+        //    services.AddControllersWithViews().AddFluentValidation();
+        //    services.AddAutoMapper(typeof(Startup));
+
+        //}
         public void ConfigureServices(IServiceCollection services)
         {
+            // DbContext ve Identity yapýlandýrmasý
             services.AddDbContext<Context>();
-            services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>();
-            services.AddHttpClient();
-            services.AddControllersWithViews();
-            services.AddAutoMapper(typeof(Startup));
+            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 
+            // HttpClient servisi ekleniyor
+            services.AddHttpClient();
+
+            // FluentValidation konfigürasyonu
+            services.AddFluentValidationAutoValidation()
+                    .AddFluentValidationClientsideAdapters();
+
+            // FluentValidation için Validator sýnýfý ekleniyor
+            services.AddTransient<IValidator<CreateGuestDto>, CreateGuestValidator>();
+            services.AddTransient<IValidator<UpdateGuestDto>, UpdateGuestValidator>();
+
+            // Controller ve View yapýlandýrmasý
+            services.AddControllersWithViews();
+
+            // AutoMapper yapýlandýrmasý
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

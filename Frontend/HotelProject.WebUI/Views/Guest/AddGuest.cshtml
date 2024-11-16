@@ -6,18 +6,29 @@
 }
 
 
+<link href="c:\users\keleb\source\repos\coreapiproject\frontend\hotelproject.webui\wwwroot\lib\bootstrap\dist\css\bootstrap.css" rel="stylesheet" />
 
 
 <form method="post">
     <br />
     <label>İsim</label>
-    <input type="text" asp-for="Name" class="form-control" />
+    <input type="text" asp-for="Name"  class="form-control" />
+    <span asp-validation-for="Name" class="text-danger" ></span>
+    <br />
     <br />
     <label>Soyisim</label>
     <input type="text" asp-for="Surname" class="form-control" />
+    <span asp-validation-for="Surname" class="text-danger"></span>
+
+    <br />
     <br />
     <label>Yaşadığı Şehir</label>
-    <input type="int" asp-for="City" class="form-control" /> <br />
+    <input type="int" asp-for="City" class="form-control" />
+    <span asp-validation-for="City" class="text-danger"></span>
+    <br />
+    <br />
+    
+
     
     <button class="btn btn-primary"> Misafir Ekle</button>
 </form>
