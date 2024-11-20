@@ -4,8 +4,10 @@ using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.EntityLayer.Concrete;
 using HotelProject.WebUI.Dtos.GuestDto;
 using HotelProject.WebUI.ValidationRules.GuestValidationRules;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -58,7 +60,31 @@ namespace HotelProject.WebUI
 
             // AutoMapper yapýlandýrmasý
             services.AddAutoMapper(typeof(Startup));
+            
+            services.AddMvc(
+               config =>
+               {
+                   var policy = new AuthorizationPolicyBuilder()
+                                    .RequireAuthenticatedUser()
+                                    .Build();
+                                     config.Filters.Add(new AuthorizeFilter(policy));
+               } 
+                );
+            services.ConfigureApplicationCookie(
+                options =>
+                {
+                    options.Cookie.HttpOnly = true;
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                    options.LoginPath = "/Login/Index";
+                    
+
+                }
+
+                );
+        
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -71,7 +97,11 @@ namespace HotelProject.WebUI
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseRouting();
 

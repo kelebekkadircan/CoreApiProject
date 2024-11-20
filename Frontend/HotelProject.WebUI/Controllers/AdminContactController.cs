@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Markup;
 
 namespace HotelProject.WebUI.Controllers
 {
@@ -23,16 +24,44 @@ namespace HotelProject.WebUI.Controllers
 
         public async Task<IActionResult> Index()
         {
+
+
+
+
+            var client2 = _clientFactory.CreateClient();
+            var response2 = await client2.GetAsync("http://localhost:27029/api/Contact/GetContactCount");
+            if (response2.IsSuccessStatusCode)
+            {
+                var jsonData2 = await response2.Content.ReadAsStringAsync();
+                var values2 = JsonConvert.DeserializeObject<int>(jsonData2);
+                ViewBag.a = values2;
+            }
+
+            var client3 = _clientFactory.CreateClient();
+            var response3 = await client3.GetAsync("http://localhost:27029/api/SendMessage/SendMessageCount");
+            if (response3.IsSuccessStatusCode)
+            {
+                var jsonData3 = await response2.Content.ReadAsStringAsync();
+                var values3 = JsonConvert.DeserializeObject<int>(jsonData3);
+                ViewBag.b = values3;
+            }
+
             var client = _clientFactory.CreateClient();
             var response = await client.GetAsync("http://localhost:27029/api/Contact");
+
+
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
                 var values = JsonConvert.DeserializeObject<List<ResultContactDto>>(jsonData);
                 return View(values);
             }
+
             return View();
 
+
+
+            
         }
         public async Task<IActionResult> SendBox()
         {
@@ -115,6 +144,9 @@ namespace HotelProject.WebUI.Controllers
 
             return View();
         }
+
+
+        
 
 
     }

@@ -1,4 +1,5 @@
 ﻿using HotelProject.WebUI.Dtos.SubscribeDto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection.KeyManagement.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -8,6 +9,8 @@ using System.Threading.Tasks;
 
 namespace HotelProject.WebUI.Controllers
 {
+    [AllowAnonymous]
+
     public class DefaultController : Controller
     {
 

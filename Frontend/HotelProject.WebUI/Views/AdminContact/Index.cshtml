@@ -11,7 +11,14 @@
 
                     <div class="email-left-box">
                         <a href="/AdminContact/AddSendMessage" class="btn btn-primary btn-block">Yeni Mesaj Oluştur</a>
-                @await Html.PartialAsync("SideBarAdminContactPartial")
+                @* @await Html.PartialAsync("SideBarAdminContactPartial") *@
+    <div class="mail-list mt-4">
+        <a href="/AdminContact/Index" class="list-group-item border-0 text-primary p-r-0"><i class="fa fa-inbox font-18 align-middle mr-2"></i> <b>Gelen</b> <span class="badge badge-primary badge-sm float-right m-t-5">@ViewBag.a</span> </a>
+        <a href="/AdminContact/SendBox" class="list-group-item border-0 p-r-0 text-success "><i class="fa fa-paper-plane font-18 align-middle mr-2"></i>Giden <span class="badge badge-success text-white badge-sm float-right m-t-5">@ViewBag.b</span></a>
+        <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-star-o font-18 align-middle mr-2"></i>Önemli <span class="badge badge-danger badge-sm float-right m-t-5">47</span> </a>
+        <a href="#" class="list-group-item border-0 p-r-0"><i class="mdi mdi-file-document-box font-18 align-middle mr-2"></i>Taslaklar</a>
+        <a href="#" class="list-group-item border-0 p-r-0"><i class="fa fa-trash font-18 align-middle mr-2"></i>Çöp Kutusu</a>
+    </div>
                         <h5 class="mt-5 m-b-10">Kategoriler</h5>
                 @await Html.PartialAsync("SideBarAdminContactCategoryPartial")
                     </div>
