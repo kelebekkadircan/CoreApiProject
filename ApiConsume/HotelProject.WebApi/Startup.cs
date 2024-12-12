@@ -75,6 +75,8 @@ namespace HotelProject.WebApi
                 });
             });
 
+            services.AddLogging();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

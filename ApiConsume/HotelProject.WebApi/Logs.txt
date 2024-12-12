@@ -1,0 +1,255 @@
+2024-12-11 20:22:47.152 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 20:22:47.162 +03:00 [INF] Hosting environment: Development
+2024-12-11 20:22:47.164 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 20:22:47.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 20:22:47.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 20:22:47.486 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 317.4904ms
+2024-12-11 20:22:47.489 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 12.1008ms
+2024-12-11 20:22:47.503 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 20:22:47.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.6892ms
+2024-12-11 20:22:47.575 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 20:22:47.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.9263ms
+2024-12-11 20:22:53.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/About - -
+2024-12-11 20:22:53.582 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 20:22:53.607 +03:00 [INF] Route matched with {action = "AboutList", controller = "About"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AboutList() on controller HotelProject.WebApi.Controllers.AboutController (HotelProject.WebApi).
+2024-12-11 20:22:54.643 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.About, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 20:22:54.658 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi) in 1045.3977ms
+2024-12-11 20:22:54.661 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 20:22:54.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/About - - - 200 - application/json;+charset=utf-8 1114.4497ms
+2024-12-11 20:22:55.866 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Staff - -
+2024-12-11 20:22:55.869 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 20:22:55.872 +03:00 [INF] Route matched with {action = "StaffList", controller = "Staff"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StaffList() on controller HotelProject.WebApi.Controllers.StaffController (HotelProject.WebApi).
+2024-12-11 20:22:55.874 +03:00 [INF] LogTrace => Index() method called
+2024-12-11 20:22:55.876 +03:00 [WRN] LogTrace => Index() method called
+2024-12-11 20:22:55.878 +03:00 [ERR] LogTrace => Index() method called
+2024-12-11 20:22:55.922 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Staff, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 20:22:55.926 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi) in 52.8804ms
+2024-12-11 20:22:55.928 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 20:22:55.930 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Staff - - - 200 - application/json;+charset=utf-8 64.0527ms
+2024-12-11 20:22:56.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Staff - -
+2024-12-11 20:22:56.859 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 20:22:56.861 +03:00 [INF] Route matched with {action = "StaffList", controller = "Staff"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StaffList() on controller HotelProject.WebApi.Controllers.StaffController (HotelProject.WebApi).
+2024-12-11 20:22:56.862 +03:00 [INF] LogTrace => Index() method called
+2024-12-11 20:22:56.864 +03:00 [WRN] LogTrace => Index() method called
+2024-12-11 20:22:56.865 +03:00 [ERR] LogTrace => Index() method called
+2024-12-11 20:22:56.875 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Staff, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 20:22:56.876 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi) in 14.155ms
+2024-12-11 20:22:56.878 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 20:22:56.880 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Staff - - - 200 - application/json;+charset=utf-8 22.4310ms
+2024-12-11 21:07:12.483 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:07:12.490 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:07:12.491 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:07:12.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:07:12.703 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:07:12.706 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 212.6420ms
+2024-12-11 21:07:12.709 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 4.5832ms
+2024-12-11 21:07:12.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:07:12.746 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.7682ms
+2024-12-11 21:07:12.778 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:07:12.855 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.5647ms
+2024-12-11 21:07:19.366 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Staff - -
+2024-12-11 21:07:19.393 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 21:07:19.414 +03:00 [INF] Route matched with {action = "StaffList", controller = "Staff"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult StaffList() on controller HotelProject.WebApi.Controllers.StaffController (HotelProject.WebApi).
+2024-12-11 21:07:19.461 +03:00 [INF] LogTrace => Staff Sayfasına Giriş Yapıldı
+2024-12-11 21:07:19.462 +03:00 [WRN] LogTrace => Staff Sayfasına Giriş Yapıldı
+2024-12-11 21:07:19.462 +03:00 [ERR] LogTrace => Staff Sayfasına Giriş Yapıldı
+2024-12-11 21:07:20.262 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Staff, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:07:20.274 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi) in 856.3128ms
+2024-12-11 21:07:20.275 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.StaffController.StaffList (HotelProject.WebApi)'
+2024-12-11 21:07:20.278 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Staff - - - 200 - application/json;+charset=utf-8 911.7383ms
+2024-12-11 21:07:23.272 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/About - -
+2024-12-11 21:07:23.274 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 21:07:23.275 +03:00 [INF] Route matched with {action = "AboutList", controller = "About"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AboutList() on controller HotelProject.WebApi.Controllers.AboutController (HotelProject.WebApi).
+2024-12-11 21:07:23.314 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.About, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:07:23.315 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi) in 39.7556ms
+2024-12-11 21:07:23.315 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 21:07:23.316 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/About - - - 200 - application/json;+charset=utf-8 43.2551ms
+2024-12-11 21:07:28.040 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/About/1 - -
+2024-12-11 21:07:28.041 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.AboutController.GetAboutById (HotelProject.WebApi)'
+2024-12-11 21:07:28.047 +03:00 [INF] Route matched with {action = "GetAboutById", controller = "About"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAboutById(Int32) on controller HotelProject.WebApi.Controllers.AboutController (HotelProject.WebApi).
+2024-12-11 21:07:28.133 +03:00 [INF] Executing OkObjectResult, writing value of type 'HotelProject.EntityLayer.Concrete.About'.
+2024-12-11 21:07:28.133 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.AboutController.GetAboutById (HotelProject.WebApi) in 85.9047ms
+2024-12-11 21:07:28.133 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.AboutController.GetAboutById (HotelProject.WebApi)'
+2024-12-11 21:07:28.134 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/About/1 - - - 200 - application/json;+charset=utf-8 93.0068ms
+2024-12-11 21:07:42.832 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:27029/api/About application/json;+charset=utf-8 133
+2024-12-11 21:07:42.832 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.AboutController.UpdateAbout (HotelProject.WebApi)'
+2024-12-11 21:07:42.833 +03:00 [INF] Route matched with {action = "UpdateAbout", controller = "About"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAbout(HotelProject.EntityLayer.Concrete.About) on controller HotelProject.WebApi.Controllers.AboutController (HotelProject.WebApi).
+2024-12-11 21:07:42.929 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-12-11 21:07:42.929 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.AboutController.UpdateAbout (HotelProject.WebApi) in 96.14ms
+2024-12-11 21:07:42.929 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.AboutController.UpdateAbout (HotelProject.WebApi)'
+2024-12-11 21:07:42.929 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:27029/api/About application/json;+charset=utf-8 133 - 200 - text/plain;+charset=utf-8 97.5028ms
+2024-12-11 21:07:42.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/About - -
+2024-12-11 21:07:42.934 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 21:07:42.934 +03:00 [INF] Route matched with {action = "AboutList", controller = "About"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AboutList() on controller HotelProject.WebApi.Controllers.AboutController (HotelProject.WebApi).
+2024-12-11 21:07:42.935 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.About, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:07:42.935 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi) in 0.996ms
+2024-12-11 21:07:42.935 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.AboutController.AboutList (HotelProject.WebApi)'
+2024-12-11 21:07:42.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/About - - - 200 - application/json;+charset=utf-8 1.5424ms
+2024-12-11 21:07:50.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:07:50.473 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:07:50.473 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:07:50.483 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:07:50.483 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 10.024ms
+2024-12-11 21:07:50.483 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:07:50.484 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 11.3353ms
+2024-12-11 21:07:52.636 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service/1 - -
+2024-12-11 21:07:52.636 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:07:52.637 +03:00 [INF] Route matched with {action = "GetServiceById", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetServiceById(Int32) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:07:52.643 +03:00 [INF] Executing OkObjectResult, writing value of type 'HotelProject.EntityLayer.Concrete.Service'.
+2024-12-11 21:07:52.644 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi) in 6.7699ms
+2024-12-11 21:07:52.644 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:07:52.644 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service/1 - - - 200 - application/json;+charset=utf-8 8.2803ms
+2024-12-11 21:08:03.573 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 157
+2024-12-11 21:08:03.573 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:03.574 +03:00 [INF] Route matched with {action = "UpdateService", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateService(HotelProject.EntityLayer.Concrete.Service) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:03.580 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-12-11 21:08:03.581 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi) in 6.5163ms
+2024-12-11 21:08:03.581 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:03.581 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 157 - 200 - text/plain;+charset=utf-8 7.7341ms
+2024-12-11 21:08:03.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:08:03.585 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:03.585 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:03.586 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:08:03.586 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 0.8586ms
+2024-12-11 21:08:03.586 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:03.586 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 1.2856ms
+2024-12-11 21:08:05.649 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service/1002 - -
+2024-12-11 21:08:05.649 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:08:05.649 +03:00 [INF] Route matched with {action = "GetServiceById", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetServiceById(Int32) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:05.652 +03:00 [INF] Executing OkObjectResult, writing value of type 'HotelProject.EntityLayer.Concrete.Service'.
+2024-12-11 21:08:05.652 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi) in 2.771ms
+2024-12-11 21:08:05.652 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:08:05.652 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service/1002 - - - 200 - application/json;+charset=utf-8 3.4661ms
+2024-12-11 21:08:12.151 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 141
+2024-12-11 21:08:12.151 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:12.151 +03:00 [INF] Route matched with {action = "UpdateService", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateService(HotelProject.EntityLayer.Concrete.Service) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:12.155 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-12-11 21:08:12.155 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi) in 3.6401ms
+2024-12-11 21:08:12.155 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:12.155 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 141 - 200 - text/plain;+charset=utf-8 4.2590ms
+2024-12-11 21:08:12.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:08:12.160 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:12.160 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:12.161 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:08:12.161 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 0.8856ms
+2024-12-11 21:08:12.161 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:12.161 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 1.3855ms
+2024-12-11 21:08:13.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service/1003 - -
+2024-12-11 21:08:13.293 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:08:13.293 +03:00 [INF] Route matched with {action = "GetServiceById", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetServiceById(Int32) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:13.295 +03:00 [INF] Executing OkObjectResult, writing value of type 'HotelProject.EntityLayer.Concrete.Service'.
+2024-12-11 21:08:13.295 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi) in 1.5929ms
+2024-12-11 21:08:13.295 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.GetServiceById (HotelProject.WebApi)'
+2024-12-11 21:08:13.295 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service/1003 - - - 200 - application/json;+charset=utf-8 2.2301ms
+2024-12-11 21:08:18.602 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 125
+2024-12-11 21:08:18.602 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:18.602 +03:00 [INF] Route matched with {action = "UpdateService", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateService(HotelProject.EntityLayer.Concrete.Service) on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:18.605 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-12-11 21:08:18.605 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi) in 2.6175ms
+2024-12-11 21:08:18.605 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.UpdateService (HotelProject.WebApi)'
+2024-12-11 21:08:18.605 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:27029/api/Service application/json;+charset=utf-8 125 - 200 - text/plain;+charset=utf-8 3.2654ms
+2024-12-11 21:08:18.610 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:08:18.610 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:18.610 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:08:18.611 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:08:18.611 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 1.1263ms
+2024-12-11 21:08:18.611 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:08:18.612 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 1.7549ms
+2024-12-11 21:08:58.738 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:08:58.745 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:08:58.746 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:08:58.756 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:08:58.969 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 221.4042ms
+2024-12-11 21:08:58.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:08:58.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:08:58.976 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 4.1253ms
+2024-12-11 21:08:59.010 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.3899ms
+2024-12-11 21:08:59.039 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:08:59.134 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.0211ms
+2024-12-11 21:09:03.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:09:03.393 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:09:03.415 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:09:04.298 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:09:04.310 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 892.187ms
+2024-12-11 21:09:04.311 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:09:04.314 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 948.5668ms
+2024-12-11 21:09:10.813 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:09:10.823 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:09:10.824 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:09:10.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:09:11.356 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 529.5048ms
+2024-12-11 21:09:11.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:09:11.390 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:09:11.391 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 4.1756ms
+2024-12-11 21:09:11.421 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5510ms
+2024-12-11 21:09:11.450 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:09:11.534 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.0907ms
+2024-12-11 21:09:15.183 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:09:15.193 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:09:15.194 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:09:15.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:09:15.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:09:15.319 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:09:15.468 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:09:15.705 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:09:15.705 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:09:15.707 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 511.4748ms
+2024-12-11 21:09:15.712 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 4.4886ms
+2024-12-11 21:09:15.743 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4309ms
+2024-12-11 21:09:15.773 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:09:15.857 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.0562ms
+2024-12-11 21:09:16.595 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:09:16.610 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 1136.9116ms
+2024-12-11 21:09:16.611 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:09:16.614 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 1418.8664ms
+2024-12-11 21:18:17.929 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:18:17.937 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:18:17.937 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:18:17.945 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:18:18.146 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 206.7577ms
+2024-12-11 21:18:18.151 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:18:18.155 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:18:18.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 3.9074ms
+2024-12-11 21:18:18.188 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.5240ms
+2024-12-11 21:18:18.217 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:18:18.291 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.0543ms
+2024-12-11 21:29:21.632 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:29:21.640 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:29:21.640 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:29:21.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:29:21.853 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 211.1222ms
+2024-12-11 21:29:21.862 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:29:21.867 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:29:21.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 4.3787ms
+2024-12-11 21:29:21.897 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3919ms
+2024-12-11 21:29:21.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:29:22.017 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.8996ms
+2024-12-11 21:29:39.699 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:29:39.707 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:29:39.707 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:29:39.715 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:29:39.917 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 207.3713ms
+2024-12-11 21:29:39.920 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:29:39.923 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:29:39.925 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 3.7603ms
+2024-12-11 21:29:39.950 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.1564ms
+2024-12-11 21:29:39.975 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:29:40.048 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.6983ms
+2024-12-11 21:30:05.879 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-11 21:30:05.887 +03:00 [INF] Hosting environment: Development
+2024-12-11 21:30:05.887 +03:00 [INF] Content root path: C:\Users\keleb\source\repos\coreApiProject\ApiConsume\HotelProject.WebApi
+2024-12-11 21:30:05.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/index.html - -
+2024-12-11 21:30:06.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - -
+2024-12-11 21:30:06.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/_vs/browserLink - -
+2024-12-11 21:30:06.110 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/index.html - - - 200 - text/html;charset=utf-8 220.8035ms
+2024-12-11 21:30:06.112 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_framework/aspnetcore-browser-refresh.js - - - 200 12370 application/javascript;+charset=utf-8 3.8201ms
+2024-12-11 21:30:06.136 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.2728ms
+2024-12-11 21:30:06.160 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - -
+2024-12-11 21:30:06.244 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.8136ms
+2024-12-11 21:30:07.610 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:27029/api/Service - -
+2024-12-11 21:30:07.636 +03:00 [INF] Executing endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:30:07.657 +03:00 [INF] Route matched with {action = "ServiceList", controller = "Service"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ServiceList() on controller HotelProject.WebApi.Controllers.ServiceController (HotelProject.WebApi).
+2024-12-11 21:30:08.525 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelProject.EntityLayer.Concrete.Service, HotelProject.EntityLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-11 21:30:08.537 +03:00 [INF] Executed action HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi) in 876.3388ms
+2024-12-11 21:30:08.538 +03:00 [INF] Executed endpoint 'HotelProject.WebApi.Controllers.ServiceController.ServiceList (HotelProject.WebApi)'
+2024-12-11 21:30:08.540 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:27029/api/Service - - - 200 - application/json;+charset=utf-8 930.6089ms

@@ -1,5 +1,6 @@
 ﻿using HotelProject.WebUI.Models.Staff;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -12,15 +13,20 @@ namespace HotelProject.WebUI.Controllers
     {
         private readonly IHttpClientFactory _clientFactory;
 
-        public StaffController(IHttpClientFactory clientFactory)
+        public StaffController(IHttpClientFactory clientFactory , ILogger<StaffController> logger)
         {
             _clientFactory = clientFactory;
+
         }
 
 
 
         public async Task<IActionResult> Index()
         {
+        
+
+
+
             var client = _clientFactory.CreateClient();
             var response = await client.GetAsync("http://localhost:27029/api/Staff");
             if (response.IsSuccessStatusCode)
